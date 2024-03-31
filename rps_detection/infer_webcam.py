@@ -1,0 +1,37 @@
+import cv2
+from ultralytics import YOLO
+
+def load_and_infer_video(video_path, model_path):
+    # Load the YOLO model
+    model = YOLO(model_path)
+
+    # Load the video
+    cap = cv2.VideoCapture(video_path)
+
+    if video_path == '0':
+        cap = cv2.VideoCapture(0)  # Load webcam
+
+    while cap.isOpened():
+        ret, frame = cap.read()
+
+        if not ret:
+            break
+        # Perform inference on the frame
+
+        results = model.predict(frame, imgsz=640, conf=0.5)
+        # Process the results
+        annotated_frame = results[0].plot()
+        # ...
+        # Display the frame with bounding boxes
+        cv2.imshow('Inference', annotated_frame)
+        if cv2.waitKey(1) == ord('q'):
+            break
+    cap.release()
+    cv2.destroyAllWindows()
+
+
+# Example usage
+video_path = '0'  # Use '0' to load webcam
+model_path = "rps_detection/pretrained/yolov8n-best.pt"
+load_and_infer_video(video_path, model_path)
+
