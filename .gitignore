@@ -142,4 +142,4 @@ __pycache__/
 *.pyc
 .vscode/
 /local_*/
-/pretrained/*.pt
+/rps_detection/pretrained/*.pt

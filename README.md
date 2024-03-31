@@ -13,7 +13,9 @@ The methods used are YOLOV8 with the following results:
 |YOLOv8n| 640| 0.956 | 0.78 | 8.7 | [download](https://huggingface.co/hamhanry/RockPaperScissor-Game/blob/main/yolov8n-best.pt)
 |YOLOv8x| 640| 0.962 | 0.792 | 257.8 | [download](https://huggingface.co/hamhanry/RockPaperScissor-Game/blob/main/yolo8x-best.pt)
 
-*Note* : I trained with 2 backbone options that you could choose, the smallest one (YOLOv8n) or the biggest one (YOLOv8X).
+Download the pretrained model and put those under `pretrained` folder
+
+*Note : I trained with 2 backbone options that you could choose, the smallest one (YOLOv8n) or the biggest one (YOLOv8X).*
 
 ## Contact
 If any feature requests please write on this [github issues](https://github.com/hamhanry/RockPaperScissor-Game/issues)
