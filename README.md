@@ -24,6 +24,7 @@ python -m rps_detection.infer_webcam
 
 ## Inference Snippet
 
+
 ## Results
 The methods used are YOLOV8 with the following results:
 
