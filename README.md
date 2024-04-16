@@ -23,6 +23,8 @@ python -m rps_detection.infer_webcam
 ```
 
 ## Inference Snippet
+https://github.com/hamhanry/RockPaperScissor-Game/assets/28456630/16099aef-288b-4d81-927f-8bbe0ab6d853
+
 
 
 ## Results
